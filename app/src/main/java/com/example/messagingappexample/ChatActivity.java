@@ -94,6 +94,7 @@ public class ChatActivity extends AppCompatActivity {
                 }
 
                 adapter.setMessages(messages);
+                recView.smoothScrollToPosition(recView.getAdapter().getItemCount());
             }
 
             @Override
